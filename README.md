@@ -18,11 +18,11 @@ To succeed, you must implement a Python package called `challenge`, which expose
 ### Important notes:
 - A dataset is provided in the [datasets](./datasets) directory.
 - Feel free to use any library you want.
-- Reach us when you completed the challenge.
+- [Reach us](mailto:dev@mediascale.eu) when you completed the challenge.
 
 ### Github setup
 
-1. [Fork this repo]().
+1. [Fork this repo](https://github.com/mediascale-be/movies-challenge).
 2. In your forked challenge repo:
    1. Go to `Settings`, at the bottom of the page, set the project visibility to `Private`.
    2. Go to `Settings > Manage Access > Add people` and add `mediascale` as a `Reader` so we can follow along with your progress.
