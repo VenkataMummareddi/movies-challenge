@@ -1,4 +1,4 @@
-# Mediascale challenge: Machine Learning on Movies
+# Challenge: Machine Learning on Movies
 
 The goal of this challenge is to build a Machine Learning model to predict the genres of a movie, given its synopsis. Your solution will be evaluated on:
 - The performance of your Machine Learning model.
