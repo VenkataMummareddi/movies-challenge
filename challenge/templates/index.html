@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Genre Prediction</title>
+</head>
+<body>
+    <h1>Upload Dataset(in csv format) to be Trained</h1>
+    <form method="POST" action="{{ url_for('train_model') }}" enctype="multipart/form-data">
+    <span>
+       <p><input type="file" name="train_file"></p>
+       <p><input type="submit" value="Train Model"></p>
+    </span>
+        {% if trained %}
+        <h4><span>Model trained successfully for the given csv file..It is time to predict</span></h4>
+        {% endif %}
+    </form>
+<h1>Do you want Predict your Movie Genre(s)?,Please Enter your Movie Synopsis</h1>
+   <form action="{{ url_for('predict_genre') }}" method="POST" enctype="multipart/form-data">
+   <span>
+       <p><input type="file" name="predict_file"></p>
+       <p><input type="submit" value="Predict Genre(s)"></p>
+   </span>
+       {% if predicted%}
+        <h4><span>Comedy,Drama,Action...Example...</span></h4>
+       {% endif %}
+   </form>
+</body>
+</html>
+
+
