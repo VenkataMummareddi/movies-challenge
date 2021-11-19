@@ -27,7 +27,7 @@ def predict_genre():
     file_name = "predict_"+str(time.time())+".csv"
     if dataset_to_predict.filename != '':
         dataset_to_predict.save(os.path.join(app.config['DATA_SETS_FOLDER'], file_name))
-    print(model.predict(file_name))
+    model.predict(file_name)
     return render_template('index.html', predicted=True,predictionResult=os.path.join(app.config['DATA_SETS_FOLDER'], "predicted.csv"))
 
 if __name__ == "__main__":
